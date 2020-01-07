@@ -1,0 +1,21 @@
+body{
+    width:100%;
+    background-color:rgb(217, 217, 217);
+}
+
+/*the element with the hidden class is not dislayed*/
+.hidden{
+  display: none;
+}
+/*the element with the show class is dislayed*/
+.show{
+  display: inline-block;
+}
+
+/*adds a scrollbar to the div*/
+#statsP {
+  background-color: white;
+  width: 80%;
+  height: 450px;
+  overflow: scroll;
+}

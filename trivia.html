@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Trivia</title>
+    <link rel="stylesheet" href = "./style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="init()">
+    <!--The login page, that also has statistics page-->
+    <div id = "siPage"class="show">
+      <h3>Please enter your name to join the game</h3>
+      <input type="text" class="sigin-add-user">
+      <input type="button" class="tdlist tdlist-add-button" value="Join Game" onClick="login(document.querySelector('.sigin-add-user').value)">
+      <div id="numPs"></div>
+      <br>
+      <input type="button" value="Show Statistics" onClick="getStats()">
+      <div id="statsP"></div>
+    </div>
+    <!--The game page-->
+    <div id="mainPage" class="hidden">
+      <div id="displayScores"></div>
+      <div id="displayQuestions"></div>
+    </div>
+  </body>
+</html>
